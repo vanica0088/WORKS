@@ -1,0 +1,28 @@
+<view class="box">
+  <form bindsubmit="userinfoSubmit" >
+  <view class="top">
+      <text class='login'>登录</text>
+      <text class='register' bindtap='zhuce'>去注册</text>
+  </view>
+
+  <view class="item middle" style="border:{{red}};">
+      <view class='phone-box'>
+          <input type='text' name="user_name"  placeholder='请输入您的用户名' maxlength='12'/>
+      </view>
+  </view>
+  <view class="item middle" style="border:{{red}};">
+      <view class='pwd-box'>
+          <input type='password' name="password"  placeholder='请输入您的密码' maxlength='16'/>
+      </view>
+  </view>
+
+  <view class='footer'>
+    <button type="primary" form-type="submit">登录</button>
+    <view>
+      登录代表您已同意
+      <text>《您不能投诉我们 协议》</text>
+    </view>
+    
+  </view>
+  </form>
+</view>

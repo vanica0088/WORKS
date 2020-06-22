@@ -1,0 +1,30 @@
+@import "/styles/blue-btn.wxss";
+page{
+  background: #fff;
+}
+  .addbtn{
+    margin-top: 250rpx;
+  }
+ 
+ /* 轮播图 */
+.page-section swiper {
+  width: 750rpx;
+  height: 700rpx;
+}
+.page-section swiper image{
+  width: 100%; 
+}
+.page-section-spacing{
+  box-sizing: border-box;
+  margin-top: 0rpx;
+  margin-right: 20rpx;
+}
+.page-section{
+  width: 750rpx;
+  height: 700rpx;
+}
+.page-section_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

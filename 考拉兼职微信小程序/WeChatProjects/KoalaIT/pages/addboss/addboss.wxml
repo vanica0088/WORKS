@@ -1,0 +1,54 @@
+<form bindsubmit="formSubmit">
+  <view class="item-cells">
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>标题</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <input placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="20" name="boss_title" value="{{boss_title}}" placeholder="{{title}}" />
+      </view>
+    </view>
+  </view>
+
+  <view class="item-cells">
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>完成时限</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <input placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="40" name="limited_time" placeholder="{{limited_time}}" />
+      </view>
+    </view>
+  </view>
+
+  <view class="item-cells">
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>薪资</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <input placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="10" name="price" placeholder="{{price}}" />
+      </view>
+    </view>
+  </view>
+
+  <view class="item-cells">
+    <view class="item-cell">
+      <view class="item-cell-bd">
+        <text>工作内容</text>
+      </view>
+      <view class="item-cell-ft">
+        <text class="blue">{{detail}}</text>/500
+      </view>
+    </view>
+    <view class="item-cell-textarea">
+      <textarea bindinput="countSelfFun" class="item-textarea" name="boss_detail" placeholder="{{boss_detail}}" maxlength="500" />
+    </view>
+  </view>
+
+
+
+  <view class="btn-box">
+    <button class="btn-sure" size="default" hover-class="btn-sure-hover" form-type="submit"> 提交 </button>
+  </view>
+</form>

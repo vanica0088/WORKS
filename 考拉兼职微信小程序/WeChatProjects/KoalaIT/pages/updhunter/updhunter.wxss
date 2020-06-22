@@ -1,0 +1,5 @@
+@import "/styles/item-cells.wxss";
+@import "/styles/blue-btn.wxss"; 
+page{
+  background-color: #f5f6f9;
+}

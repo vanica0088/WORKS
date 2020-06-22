@@ -1,0 +1,46 @@
+#page-container{
+    widows:760px;
+    margin:auto;
+}
+html,body{
+    margin:0;
+    padding:0;
+}
+#main-nav{
+    background:red;
+    height:50px;
+}
+#header{
+    background: blue;
+    height: 150px;
+}
+#sidebar-a{
+    float:right;
+    width:280px;
+    background: darkgreen;
+}
+#content{
+    background: green;
+    margin-right: 280px;
+}
+#content h2 {
+    margin: 0;
+    padding: 0;
+}#content p {
+    margin: 0;
+    padding: 0;
+} 
+
+#footer{
+    clear:both;
+    background: orange;
+    height: 66px;
+}
+.hidden{
+    display:none;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+

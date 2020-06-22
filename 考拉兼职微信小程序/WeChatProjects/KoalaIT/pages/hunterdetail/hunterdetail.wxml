@@ -1,0 +1,76 @@
+<form bindsubmit="formSubmit">
+
+  <view class="item-cells">
+
+    <view class="center">
+      <view class="item-cell-ft blue">
+        <text class="tittle">{{hunter_title}}</text>
+      </view>
+    </view>
+
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>任职公司/就读学校</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <text class="company">{{company}}</text>
+      </view>
+    </view>
+
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>从业时长</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <text class="time">{{work_time}}</text>
+      </view>
+    </view>
+
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>期望薪资</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <text class="salary">{{salary}}</text>
+      </view>
+    </view>
+
+    <view class="item-cell">
+      <view class="item-cell-bd">
+        <text>详细内容</text>
+      </view>
+    </view>
+    <view class="item-cell-textarea">
+      <text class="detail">{{capacity}}</text>
+    </view>
+
+    <view class="item-cell">
+      <view class="item-cell-bd">
+        <text></text>
+      </view>
+    </view>
+    <view class="item-cell-textarea">
+      <text class="detail">{{hunter_detail}}</text>
+    </view>
+
+
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-ft blue">
+        <text>{{creat_time}}</text>
+      </view>
+    </view>
+
+  </view>
+
+  <block wx:if="{{order}}">
+    <view class="btn-box">
+      <button class="btn-sure" size="default" hover-class="btn-sure-hover" form-type="submit"> 预约 </button>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="btn-box">
+      <button class="beiyue"> 被抢先了 </button>
+    </view>
+  </block>
+
+</form>

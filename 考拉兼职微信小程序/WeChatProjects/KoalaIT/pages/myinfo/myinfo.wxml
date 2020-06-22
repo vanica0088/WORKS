@@ -1,0 +1,75 @@
+<view class="my-header">
+
+  <!-- <block wx:else> -->
+  <image class="user-avatar" src="{{img_url}}" mode="aspectFill"></image>
+  <view>
+    <block wx:if="{{user}}">
+      <text class="user-name">{{username}}</text>
+    </block>
+    <block wx:else>
+      <text class="login" bindtap='login'>点此登录</text>
+    </block>
+  </view>
+
+  <!-- </block> -->
+  <!--<text class="edit-info" bindtap="editInfoTap">编辑资料</text>-->
+</view>
+
+<view class="a">
+  <view>
+    <text class="iconfont icon-order" bindtap="orderInfoTap"></text>
+  </view>
+  <view>
+    <text class="iconfont icon-ordered" bindtap="orderedInfoTap"></text>
+  </view>
+  <view>
+    <text class="iconfont icon-fabu"  bindtap="publishTap"></text>
+  </view>
+</view>
+
+<view class="d">
+   <text class="biaoti">我预约的</text>
+    <text class="biaoti">预约我的</text>
+     <text class="biaoti">我发布的</text>
+</view>
+
+<view class="b">
+  <view class="item-cell item-cell-access" bindtap="resumeTap">
+    <view class="item-cell-bd">
+      <text>我的简历</text>
+    </view>
+    <view class="item-cell-ft"></view>
+  </view>
+
+  <view class="item-cell item-cell-access" bindtap="updMyInfoTap">
+    <view class="item-cell-bd">
+      <text>修改个人信息</text>
+    </view>
+    <view class="item-cell-ft"></view>
+  </view>
+</view>
+
+<view class="b">
+  <view class="item-cell item-cell-access" bindtap="resumeTap">
+    <view class="item-cell-bd">
+      <text>我的收藏</text>
+    </view>
+    <view class="item-cell-ft"></view>
+  </view>
+
+  <view class="item-cell item-cell-access" bindtap="updMyInfoTap">
+    <view class="item-cell-bd">
+      <text>我的评价</text>
+    </view>
+    <view class="item-cell-ft"></view>
+  </view>
+</view>
+
+<block wx:if="{{user}}">
+  <view class="c" bindtap="exitTap">
+    <text>退出登录</text>
+  </view>
+</block>
+<block wx:else>
+  <text></text>
+</block>

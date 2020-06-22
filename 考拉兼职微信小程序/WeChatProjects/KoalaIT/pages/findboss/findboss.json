@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "找兼职",
+  "usingComponents": {
+    "Search":"../../components/Search/Search"
+  }
+}

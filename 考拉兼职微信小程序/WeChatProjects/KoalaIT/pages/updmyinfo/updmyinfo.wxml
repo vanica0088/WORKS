@@ -1,0 +1,76 @@
+<form bindsubmit="formSubmit">
+<view class="item-cells no-top">
+  <view class="item-cell item-cell-access item-cell-image" catchtap="uploadImgTap">
+    <view class="item-cell-bd">
+      <text>头像</text>
+    </view>
+    <view class="item-cell-ft">
+      <image wx:if="{{img_url}}" src="{{img_url}}"></image>
+      <image wx:else src="/icons/small_avatar.png"></image>
+    </view>
+  </view>
+</view>
+<view class="item-cells">
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>用户名</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input  type="text" maxlength="12" name="user_name" value="{{user_name}}" />
+    </view>
+  </view>
+  </view>
+
+  <view class="item-cells">
+  <view class="item-cell item-cell-input">
+    <view class="item-cell-bd">
+      <text>密码</text>
+    </view>
+    <view class="item-cell-ft blue">
+      <input  type="password" maxlength="16" name="password" value="{{password}}" />
+    </view>
+  </view>
+  </view>
+
+<view class="item-cells">
+   <view class="item-cell item-cell-access">
+    <view class="item-cell-bd">
+      <text>性别</text>
+    </view>
+    <picker class="item-cell-ft blue" bindchange="bindPickerChangeSex" name="user_index" value="{{sexindex}}" range="{{sex}}">
+      <view class="picker">
+        {{sex[sexindex]}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class="item-cells">
+  <view class="item-cell item-cell-access">
+    <view class="item-cell-bd">
+      <text>出生年月</text>
+    </view>
+    <picker class="item-cell-ft blue" mode="date" name="birthday" value="{{birthday}}" fields="day" start="1960-01-01" end="2050-01-01" bindchange="bindDateChangeBirthday">
+      <view class="picker">
+        {{birthday}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+<view class="item-cells">
+  <view class="item-cell item-cell-access">
+    <view class="item-cell-bd">
+      <text>所在城市</text>
+    </view>
+  <picker  bindchange="changeRegin" name="region" mode = "region" value="{{region}}">
+    <view>{{region[0]}} - {{region[1]}} - {{region[2]}}</view>
+  </picker>
+</view>
+</view>
+
+
+<view class="btn-box">
+  <button form-type="submit" class="btn-sure" size="default" hover-class="btn-sure-hover"> 保存 </button>
+</view>
+</form>

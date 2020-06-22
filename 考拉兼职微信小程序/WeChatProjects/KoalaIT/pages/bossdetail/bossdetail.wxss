@@ -1,0 +1,45 @@
+@import "/styles/item-cells.wxss";
+@import "/styles/blue-btn.wxss"; 
+page{
+  background-color: #f5f6f9;
+}
+
+.beiyue{
+  color: #666;
+  width:80rpx;
+  background: rgba(153, 153, 153, 0.507);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  padding-bottom: 50rpx;
+}
+
+.tittle{
+  font-size: 34rpx;
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+  letter-spacing: 3rpx;
+}
+
+.salary {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #FF8C00;
+}
+
+.time {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: red;
+}
+
+.detail {
+  font-size: 28rpx;
+  color: #8b4513;
+}
+
+
+

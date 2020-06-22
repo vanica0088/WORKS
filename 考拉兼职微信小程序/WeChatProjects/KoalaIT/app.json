@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/myinfo/myinfo",
+    "pages/login/login",
+    "pages/orderinfo/orderinfo",
+    "pages/add/add",
+    "pages/findboss/findboss",
+    "pages/optresume/optresume",
+    "pages/search/search",
+    "pages/bossagree/bossagree",
+    "pages/publish/publish",
+    "pages/updhunter/updhunter",
+    "pages/updboss/updboss",
+    "pages/resume/resume", 
+    "pages/register/register", 
+    "pages/hunterdetail/hunterdetail",
+    "pages/findhunter/findhunter",
+    "pages/bossdetail/bossdetail",
+    "pages/addhunter/addhunter",
+    "pages/addboss/addboss",
+    "pages/orderedinfo/orderedinfo",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#483D8B",
+    "navigationBarTitleText": "考拉兼职",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#7B68EE",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/findboss/findboss",
+        "text": "找兼职",
+        "iconPath": "icons/jianzhi0.png",
+        "selectedIconPath": "icons/jianzhi1.png"
+      },
+      {
+        "pagePath": "pages/findhunter/findhunter",
+        "text": "找人才",
+        "iconPath": "icons/rencai0.png",
+        "selectedIconPath": "icons/rencai1.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "发布",
+        "iconPath": "icons/tianjia0.png",
+        "selectedIconPath": "icons/tianjia1.png"
+      },
+      {
+        "pagePath": "pages/myinfo/myinfo",
+        "text": "我的",
+        "iconPath": "icons/wode0.png",
+        "selectedIconPath": "icons/wode1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

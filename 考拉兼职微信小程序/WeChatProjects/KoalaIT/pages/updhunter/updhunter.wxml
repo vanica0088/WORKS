@@ -1,0 +1,69 @@
+<form bindsubmit="formSubmit">
+  <view class="item-cells">
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>任职公司/就读学校</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <input placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="40" value="{{Company}}" placeholder="{{company}}" />
+      </view>
+    </view>
+  </view>
+
+  <view class="item-cells">
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>从业时长</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <input placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="10" value="{{WorkTime}}" placeholder="{{workTime}}" />
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="item-cells">
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>期望薪资</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <input placeholder-style="color:#999;font-weight:bold;" type="text" maxlength="10" value="{{Salary}}" placeholder="{{salary}}" />
+      </view>
+    </view>
+  </view>
+
+  <view class="item-cells">
+    <view class="item-cell">
+      <view class="item-cell-bd">
+        <text>技术能力</text>
+      </view>
+      <view class="item-cell-ft">
+        <text class="blue">{{Capacity}}</text>/500
+      </view>
+    </view>
+    <view class="item-cell-textarea">
+      <textarea bindinput="countSelfFun" class="item-textarea" value="{{capacity}}" maxlength="500" />
+    </view>
+  </view>
+
+  <view class="item-cells">
+    <view class="item-cell">
+      <view class="item-cell-bd">
+        <text>项目经验</text>
+      </view>
+      <view class="item-cell-ft">
+        <text class="blue">{{detail}}</text>/500
+      </view>
+    </view>
+    <view class="item-cell-textarea">
+      <textarea bindinput="countSelfFun" class="item-textarea" value="{{hunterDetail}}" maxlength="500" />
+    </view>
+  </view>
+
+  <view class="btn-box">
+    <button class="btn-sure" size="default" hover-class="btn-sure-hover" catchtap="submitResumeBaseTap"> 确认修改 </button>
+  </view>
+
+</form>

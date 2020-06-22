@@ -1,0 +1,109 @@
+/* 轮播图 */
+.page-section swiper {
+  width: 750rpx;
+  height: 400rpx;
+}
+.page-section swiper image{
+  width: 100%; 
+}
+.page-section-spacing{
+  box-sizing: border-box;
+}
+.page-section{
+  width: 750rpx;
+  height: 435rpx;
+}
+.page-section_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.container {
+  padding-top: 0rpx;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+}
+
+.item-img {
+  padding-top: 40rpx;
+  padding-left: 40rpx;
+}
+
+.img {
+  width: 98rpx;
+  height: 98rpx;
+  border-radius: 90rpx;
+  background-color: #483d8b;
+}
+
+.item-main {
+  flex: 1;
+  padding: 32rpx 28rpx 32rpx 0;
+  border-bottom: 1rpx solid #dcdcdc;
+  line-height: 1;
+}
+
+.job {
+  padding-right: 120rpx;
+  padding-left: 50rpx;
+  position: relative;
+  line-height: 30rpx;
+}
+
+.job-position {
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 29rpx;
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+  margin-right: 20rpx;
+  letter-spacing: 3rpx;
+}
+
+.job-salary {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: rgb(255, 102, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.job-time {
+  width:180rpx;
+  height:30rpx;
+  background: #FAEBD7;
+  text-align: center;
+  margin-top: 25rpx;
+  font-size: 24rpx;
+  color: #FF8C00;
+}
+
+.detail {
+  padding-top: 10rpx;
+  display: -webkit-box;
+  font-size: 22rpx;
+  color: #999;
+  line-height: 30rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+  color: #999;
+  float: right;
+}

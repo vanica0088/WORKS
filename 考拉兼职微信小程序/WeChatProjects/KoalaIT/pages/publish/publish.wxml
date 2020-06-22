@@ -1,0 +1,80 @@
+<view>
+  <view class='nav'>
+    <view class="{{selected?'orange':'default'}}" data-w='w' bindtap='select'>
+      兼职信息
+    </view>
+
+    <view class="{{select?'orange':'default'}}" data-y='y' bindtap='select'>
+      人才信息
+    </view>
+  </view>
+
+  <view class="{{selected?'show':'hidden'}}">
+    <view class="container">
+      <scroll-view scroll-y="true" style='height:{{scroll_height}}rpx' class="scroll">
+        <view wx:for="{{bosslist}}" wx:key="key" data-boss_id="{{item.boss_id}}" data-boss_title="{{item.boss_title}}" data-index="{{index}}">
+          <block>
+            <navigator class="link" url="../updboss/updboss?boss_id={{item.boss_id}}">
+              <view class="item">
+                <view class="item-main">
+                  <view class="job">
+                    <text class="job-position" data-id="{{id}}">{{item.boss_title}}</text>
+                    <text class="job-salary">{{item.price}}</text>
+                    <view class="job-time">
+                      <text>完成期限：{{item.limited_time}}</text>
+                    </view>
+
+                    <view class="detail">
+                      <text>{{item.boss_detail}}</text>
+                    </view>
+                  </view>
+
+                  <view class="date">
+                    <text>{{item.creat_time}}</text>
+                  </view>
+                </view>
+              </view>
+            </navigator>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="{{select?'show':'hidden'}}">
+    <view class="container">
+      <scroll-view scroll-y="true" style='height:{{scroll_height}}rpx'>
+        <view wx:for="{{hunterlist}}" wx:key="key" catchtap="catchTap" data-hunter_id="{{item.hunter_id}}" data-hunter_title="{{item.hunter_title}}" data-index="{{index}}">
+          <block>
+            <navigator class="link" url="../updhunter/updhunter?hunter_id={{item.hunter_id}}">
+              <view class="item">
+
+                <view class="item-main">
+                  <view class="job">
+                    <text class="job-position" data-id="{{id}}">{{item.hunter_title}}</text>
+                    <text class="job-salary">{{item.salary}}</text>
+                    <view class="job-company">
+                      <text>任职：{{item.company}}</text>
+                    </view>
+
+                    <view class="job-time">
+                      <text>从业：{{item.work_time}}</text>
+                    </view>
+
+                    <view class="detail">
+                      <text>{{item.hunter_detail}}</text>
+                    </view>
+                  </view>
+
+                  <view class="date">
+                    <text>{{item.creat_time}}</text>
+                  </view>
+                </view>
+              </view>
+            </navigator>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

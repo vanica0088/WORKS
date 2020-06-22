@@ -1,0 +1,50 @@
+.box{
+    padding: 0 50rpx;
+  }
+  .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 100rpx;
+  }
+  .login{
+    font-size: 70rpx;
+     color: #000;
+    font-weight: bold;
+  }
+  .register{
+    font-size: 40rpx;
+    color: #537ADF;
+    font-weight: bold;
+  }
+  .item{
+    height: 110rpx;
+    background-color: #F6F6F6;
+    border-radius: 6px;
+  }
+  .middle{
+    margin:90rpx 0 40rpx;
+    display: flex;
+    align-items: center;
+    padding-left: 30rpx;
+    border:1px solid #F6F6F6;
+  }
+
+  .footer{
+    margin-top: 150rpx;
+  }
+  .footer button{
+    background: #537ADF;
+    color:#fff;
+  }
+  .footer view{
+    margin-top: 30rpx;
+    font-size: 30rpx;
+    color: #999;
+  }
+  .footer view text{
+    color: #666;
+    font-weight: bold;
+  }
+  
+  

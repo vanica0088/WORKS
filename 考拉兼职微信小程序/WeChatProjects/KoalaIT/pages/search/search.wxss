@@ -1,0 +1,113 @@
+.search {
+  width: 500rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow: 0px 2px 2px 2px #ddd;
+  border-width: 0rpx;
+}
+
+.sousuo {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.search input {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  background-color: #fff;
+  border-radius: 15rpx;
+}
+
+.container {
+  padding-top: 0rpx;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+}
+
+.item-img {
+  padding-top: 40rpx;
+  padding-left: 40rpx;
+}
+
+.img {
+  width: 98rpx;
+  height: 98rpx;
+  border-radius: 90rpx;
+  background-color: #483d8b;
+}
+
+.item-main {
+  flex: 1;
+  padding: 32rpx 28rpx 32rpx 0;
+  border-bottom: 1rpx solid #dcdcdc;
+  line-height: 1;
+}
+
+.job {
+  padding-right: 120rpx;
+  padding-left: 50rpx;
+  position: relative;
+  line-height: 30rpx;
+}
+
+.job-position {
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 29rpx;
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+  margin-right: 20rpx;
+  letter-spacing: 3rpx;
+}
+
+.job-salary {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: rgb(255, 123, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.job-time {
+  width: 180rpx;
+  height: 30rpx;
+  background: #faebd7;
+  text-align: center;
+  margin-top: 25rpx;
+  font-size: 24rpx;
+  color: #ff8c00;
+}
+
+.detail {
+  padding-top: 10rpx;
+  display: -webkit-box;
+  font-size: 22rpx;
+  color: #999;
+  line-height: 30rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+  color: #999;
+  float: right;
+}

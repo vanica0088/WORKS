@@ -1,0 +1,58 @@
+<form bindsubmit="formSubmit">
+
+  <view class="item-cells">
+    <view class="center">
+      <view class="item-cell-ft blue">
+        <text class="tittle">{{boss_title}}</text>
+      </view>
+    </view>
+
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>完成时限</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <text class="time">{{limited_time}}</text>
+      </view>
+    </view>
+
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-bd">
+        <text>薪资</text>
+      </view>
+      <view class="item-cell-ft blue">
+        <text class="salary">{{price}}</text>
+      </view>
+    </view>
+
+    <view class="item-cell">
+      <view class="item-cell-bd">
+        <text>工作内容</text>
+      </view>
+    </view>
+    <view class="item-cell-textarea">
+      <text class="detail">{{boss_detail}}</text>
+    </view>
+
+    <view class="item-cell item-cell-input">
+      <view class="item-cell-ft blue">
+        <text>{{creat_time}}</text>
+      </view>
+    </view>
+
+  </view>
+
+
+
+  <block wx:if="{{order}}">
+    <view class="btn-box">
+      <button class="btn-sure" size="default" hover-class="btn-sure-hover" form-type="submit"> 投递简历 </button>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="btn-box">
+      <button class="beiyue"> 已经被接啦 </button>
+    </view>
+  </block>
+
+</form>
