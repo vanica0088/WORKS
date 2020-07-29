@@ -1,0 +1,20 @@
+.profile{
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 50px auto;
+    background-color: white;
+
+}
+.profile_btn{
+    margin: 50px auto;
+    text-align: center;
+}
+.profile_btn .confirm{
+    color: white;
+    border-radius: 2px;
+    background-color: #000;
+}
+.profile_btn .confirm:hover{
+    background-color: #666;
+}

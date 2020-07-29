@@ -1,0 +1,80 @@
+.logo {
+    width: 300px;
+    height: 75px;
+    margin: 0 60px;
+    float: left;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 25px 10px;
+}
+
+.logo .text {
+    float: left;
+    margin-left: 10px;
+}
+
+.logo .text p {
+    color: snow;
+    height: 90px;
+    line-height: 90px;
+    font-size: 30px;
+    font-family: "黑体";
+    font-weight: bolder;
+    text-align: center;
+}
+
+.nav {
+    float: right;
+    margin-right: 40px;
+}
+
+.nav li {
+    list-style: none;
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100px;
+    height: 90px !important;
+    text-align: center;
+    line-height: 90px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: snow;
+}
+
+.nav a:hover,
+a:active {
+    color: rgb(18, 150, 219);
+}
+
+.sign {
+    float: right;
+    margin-right: 40px;
+}
+
+.sign li {
+    list-style: none;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    width: 80px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.sign a {
+    text-decoration: none;
+    color: snow;
+}
+
+.sign a:hover,
+a:active {
+    color: rgb(18, 150, 219);
+}
